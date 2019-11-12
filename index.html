@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="build.js"></script>
+    <script src="weather.js"></script>
+    <script src="snowfall.js"></script>
+    <script src="rainfall.js"></script>
+    <script src="clouds.js"></script>
+    <script src="mist.js"></script>
+    <script src="planes.js"></script>
+    <script src="skycolor.js"></script>
+    <script src="lights.js"></script>
+    <script src="foreground.js"></script>
+    <script src="trees.js"></script>
+      <script src="WeatherBG.js"></script>
+      <script src="Weatherfg.js"></script>
+    <style>
+/* canvas CSS */
+     #canvas{
+            /* background-color: rgb(0, 255, 0); */
+            width: 600px;
+            height: 700px;
+            float:left;
+            /* border: 1px solid red; */
+     }
+     #second{
+       width:500px;
+       float:left;
+       /* border: 1px solid red; */
+     }
+     #wrapper{
+       display: flex;
+      overflow:hidden;
+     }
+     body{
+       padding: 0;
+       margin: 0;
+       color:#993434;
+       /* background-color: rgb(0, 0, 0); */
+       height: 100vh;
+       background-image:linear-gradient(rgba(0, 0, 0, 0), black);
+     }
+     .buttons{
+       background-color: orange;
+       border:none;
+       width:30;
+       float:left;
+     }
+
+
+   </style>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  </head>
+  <body>
+    <div id = "wrapper">
+        <div id='canvas'></div>
+          <div id = 'second'>
+              <div id="rain" class="buttons"></div>
+              <div id="snow"class="buttons"></div>
+              <div id="fog"class="buttons"></div>
+              <div id="cloudy"class="buttons"></div>
+              <div id="clear"class="buttons"></div>
+              <div id="time"class="buttons"></div>
+
+          </div>
+    </div>
+  </body>
+</html>
